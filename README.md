@@ -1,4 +1,4 @@
-# Library Application Kurulum ve Kullanım Kılavuzu
+# Library Application 
 
 ## İçindekiler
 
