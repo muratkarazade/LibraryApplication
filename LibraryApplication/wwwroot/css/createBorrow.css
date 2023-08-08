@@ -1,0 +1,21 @@
+﻿.form-group {
+    margin-bottom: 20px;
+}
+
+input.form-control {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button.btn-primary {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #007BFF;
+    border: none;
+}
+
+    button.btn-primary:hover {
+        background-color: #0056b3;
+    }

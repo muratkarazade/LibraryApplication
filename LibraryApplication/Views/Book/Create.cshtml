@@ -1,0 +1,37 @@
+﻿@model LibraryApplication.ViewModels.CreateBookViewModel
+
+<head>
+    <link rel="stylesheet" href="~/css/style.css">
+    <script src="~/js/site.js" defer></script>
+</head>
+<h2 class="text-center mb-4">Yeni Kitap Oluştur</h2>
+
+<div class="container">
+    <form asp-action="Create"  method="post" enctype="multipart/form-data">
+        <div class="form-group row">
+            <label for="Title" class="col-sm-2 col-form-label">Kitap Adı</label>
+            <div class="col-sm-10">
+                <input asp-for="Title" class="form-control" required />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Author" class="col-sm-2 col-form-label">Yazar Adı</label>
+            <div class="col-sm-10">
+                <input asp-for="Author" class="form-control" required />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="PhotoFile" class="col-sm-2 col-form-label">Kitap Resmi</label>
+            <div class="col-sm-10">
+                <input id="actual-file" asp-for="PhotoFile" type="file" class="form-control d-none" required />
+                <label for="actual-file" class="btn btn-secondary">Dosya Seç</label>
+                <span id="file-chosen">Dosya seçilmedi</span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Oluştur</button>
+            </div>
+        </div>
+    </form>
+</div>
